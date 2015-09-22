@@ -1,0 +1,40 @@
+body {
+  background:#bfd0d1;
+}
+.container-fluid {
+    margin-top:1%;
+}
+.single-item {
+    width:90%;
+    height:auto;
+}
+
+.content {
+    margin-left: 5%;
+}
+
+
+img, .slide {
+    max-width:100%;
+    height:auto;
+}
+
+.graphic {
+  margin-left:20%;
+}
+
+.text-box {
+    height:100px;
+    width:60%;
+    overflow-y:scroll;
+    margin-top:10%;
+}
+
+.headline, .subhead {
+    font-family:Bookman Old Style, serif;
+}
+
+.article {
+  font-size:1.2em;
+}
+
