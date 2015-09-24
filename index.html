@@ -10,13 +10,18 @@
     
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
     <link href="css/sprites.css" rel="stylesheet">
-  
     <!--Slick Carousel css-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
+    <!--SlickQuiz css-->
+        <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
+    <!--Q-Tip css-->
+    <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" />
+    <!--My own CSS sheet-->
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,11 +39,18 @@
     <div class="slide"><!--slide 1-->
       <div class="row">
        <div class="col-xs-7 graphic-area">
-        <img class="graphic" src="images/hand.png" alt="hand" />
+        <img class="graphic" src="images/hand.png" alt="Hand" usemap="#Map" />
+          <map name="Map" id="Map">
+            <area alt="pinky" title="Pinky" href="#pinky" shape="poly" coords="12,102,27,104,57,222,22,236,2,122,4,109" />
+            <area alt="ring" title="Ring" href="#ring" shape="poly" coords="78,37,67,42,63,58,73,214,110,197,98,58,90,38" />
+            <area alt="middle" title="Middle" href="#middle" shape="poly" coords="142,2,129,9,123,89,119,189,164,186,166,47,160,13" />
+            <area alt="pointer" title="Pointer" href="#pointer" shape="poly" coords="199,22,187,28,183,53,181,103,177,143,170,186,210,202,222,133,223,69,216,34" />
+          <area alt="thumb" title="Thumb" href="#thumb" shape="poly" coords="278,184,260,201,243,240,238,263,228,285,277,317,290,263,301,220,302,197,294,182" />
+          </map>
       </div>
       <div class="col-xs-5 text-area">
-        <div class="headline"><h1>The Hand:</h1></div>
-        <div class="subhead"><h2>A History</h2></div>
+        <div class="headline"><h1>Fingers:</h1></div>
+        <div class="subhead"><h2>Fact & Fiction</h2></div>
         <div class="text-box">
           <p class="article">
            Scroll right to begin. Or pick a finger. Any finger.</p>
@@ -47,7 +59,7 @@
     </div>
     </div><!--close of slide 1-->
     
-    <div class="slide"><!--slide 2-->
+    <div class="slide" id="pointer"><!--slide 2-->
       <div class="row">
        <div class="col-xs-7 graphic-area">
         <img class="graphic" src="images/pointer.png" alt="pointer finger" />
@@ -63,7 +75,7 @@
     </div>
     </div><!--close of slide 2-->
 
-    <div class="slide"><!--slide 3-->
+    <div class="slide" id="middle"><!--slide 3-->
       <div class="row">
        <div class="col-xs-7 graphic-area">
         <img class="graphic" src="images/middle.png" alt="middle finger" />
@@ -74,13 +86,13 @@
         <h4>"Phallic since 800 B.C."</h4>
         <div class="text-box">
           <p class="article">
-            Extending the middle finger, a/k/a flipping someone off or giving him the bird, has been considered an insult since at least ancient Greece. The Romans called the middle finger <i>digitus impudicus</i>, the “shameless finger.”</p><p class="article">The single-finger salute was first documented in the United States in 1886, when Old Hoss Radbourn, a pitcher for the Boston Beaneaters, flipped off the cameraman during a team picture. Pretty much what you’d expect from a guy named Old Hoss.</p>
+            Extending the middle finger, a/k/a flipping someone off or giving him the bird, has been considered an insult since at least ancient Greece. The Romans called the middle finger <i>digitus impudicus</i>, the “shameless finger.”</p><p class="article">The single-finger salute was first documented in the United States in 1886, when Old Hoss Radbourn, a pitcher for the Boston Beaneaters, flipped off the cameraman during a team <span class="baseball">picture</span>. Pretty much what you’d expect from a guy named Old Hoss.</p>
         </div>
       </div>
     </div>
     </div><!--close of slide 3-->
     
-     <div class="slide"><!--slide 4-->
+     <div class="slide" id="ring"><!--slide 4-->
       <div class="row">
        <div class="col-xs-7 graphic-area">
         <img class="graphic" src="images/ring.png" alt="ring finger" />
@@ -96,7 +108,7 @@
     </div>
     </div><!--close of slide 4-->
     
-    <div class="slide"><!--slide 5-->
+    <div class="slide" id="pinky"><!--slide 5-->
       <div class="row">
        <div class="col-xs-7 graphic-area">
         <img class="graphic" src="images/pinky.png" alt="pinky" />
@@ -112,7 +124,7 @@
     </div>
     </div><!--close of slide 5-->
     
-    <div class="slide"><!--slide 6-->
+    <div class="slide" id="thumb"><!--slide 6-->
       <div class="row">
        <div class="col-xs-7 graphic-area">
         <img class="graphic" src="images/thumb.png" alt="pinky" />
@@ -130,7 +142,26 @@
     </div><!--close of slide 6-->
   
   <div class="slide" id="slickQuiz"><!--quiz-->
-    <iframe src="quiz.html" width="100%" height="560px"></iframe>
+   <h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+
+                <a class="button startQuiz" href="#">Get Started!</a>
+            </div>
+
+            <!-- where the quiz gets built -->
+        </div>
+
+        <div class="quizResults">
+            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+
+            <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+
+            <div class="quizResultsCopy">
+                <!-- where the quiz result copy goes -->
+            </div>
   </div><!--close of quiz-->
     
     
@@ -138,10 +169,20 @@
   </div>
 </div>
 </div>
-
+<!--JQuery-->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--Slick carousel-->
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+<!--Quiz-->
+  <script src="quiz/js/slickQuiz-config.js"></script>
+  <script src="quiz/js/slickQuiz.js"></script>
+  <script src="quiz/js/master.js"></script>
+<!--Q-Tip-->
+<script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+<!--image mapping resizer-->
+<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
   </body>
 </html>

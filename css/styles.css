@@ -13,6 +13,11 @@ body {
     margin-left: 5%;
 }
 
+.slide:focus {
+  outline: none;
+  border:none;
+}
+
 
 img, .slide {
     max-width:100%;
@@ -30,8 +35,8 @@ img, .slide {
     margin-top:10%;
 }
 
-.headline, .subhead {
-    font-family:Bookman Old Style, serif;
+h1, h2 {
+    font-family:Garamond, serif;
 }
 
 .article {
