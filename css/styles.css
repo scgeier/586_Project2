@@ -1,9 +1,11 @@
 body {
   background:#bfd0d1;
 }
+
 .container-fluid {
     margin-top:1%;
 }
+
 .single-item {
     width:90%;
     height:auto;
@@ -19,27 +21,107 @@ body {
 }
 
 
-img, .slide {
+img {
     max-width:100%;
     height:auto;
 }
 
 .graphic {
   margin-left:20%;
+  max-width:100%;
+  height:auto;
+}
+
+
+@font-face {
+  font-family: Shadeco;
+  src: url('../LetteringDecoShadow.otf');
+  src: url('../LetteringDecoShadow.ttf');
+  }
+
+
+.headline, .subhead, .textbox {
+  margin-right:20%;
 }
 
 .text-box {
-    height:100px;
-    width:60%;
-    overflow-y:scroll;
+    width:80%;
     margin-top:10%;
 }
 
-h1, h2 {
-    font-family:Garamond, serif;
+@media only screen and (max-width: 414px) {
+
+   .text-box {
+    width:100%;
+    height:100px;
+    overflow-y:scroll;}
+
 }
 
-.article {
-  font-size:1.2em;
+.headline {
+    margin-top:7%;
+    font-family:Shadeco;
+    color:black;
 }
+
+
+.subhead {
+  border-bottom:2px dotted black;
+  margin-top:7%;
+  font-family:Garamond; serif,
+  background:red;
+}
+
+#title {
+  font-size:3em;
+  padding-top:5%;
+}
+
+#subtitle {
+  font-size:2.4em;
+  font-family:Snell Roundhand, serif;
+  color:#CC7A00;
+  margin-top:15%;
+}
+
+h1 {
+  color:#553900;
+  font-size:2em;
+  font-family:Shadeco;
+}
+
+.article-intro {
+  font-family:Engravers MT, serif;
+  font-size:1.5em;
+  line-height:150%;
+}
+
+#quote {
+  font-family: Museo Slab, serif;
+}
+
+@media only screen and (max-width: 414px) {
+  #quote{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .article-intro {
+    font-size:0.65em;
+  }
+}
+
+
+.qtip {
+  max-width:30%;
+  max-height:90%;
+}
+
+.baseball, .swear, .ratio {
+  color:#ffffff;
+}
+
+
+
 
