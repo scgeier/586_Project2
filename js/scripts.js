@@ -14,7 +14,7 @@ $(document).ready(function(){
   
   $('.baseball').qtip({ // Grab some elements to apply the tooltip to
     content: {
-      text: '<img src="./images/hoss.jpg" width=400 height=600 />',
+      text: '<img class="qtip-pic" src="./images/hoss.jpg" />',
       title:'The First Flipped Bird',
       hide:'unfocus'
       },
@@ -31,12 +31,12 @@ $(document).ready(function(){
   
     $('.swear').qtip({ // Grab some elements to apply the tooltip to
     content: {
-      text: '<img src="./images/swear.jpg" />',
+      text: '<img class="qtip-pic" src="./images/swear.jpg" />',
       title:'Pinky Swear',
       hide:'unfocus'
       },
     position: {
-        my: 'top right',  // Position my top left...
+        my: 'center right',  // Position my top left...
         at: 'top left', // at the bottom right of...
         target: $('.swear') // my target
     },
@@ -47,12 +47,12 @@ $(document).ready(function(){
 })
         $('.ratio').qtip({ // Grab some elements to apply the tooltip to
     content: {
-      text: '<img src="./images/ratio.png" />',
+      text: '<img class="qtip-pic" src="./images/ratio-pic.png" />',
       title:'The 2D:4D Ratio',
       hide:'unfocus'
       },
     position: {
-        my: 'top right',  // Position my top left...
+        my: 'center right',  // Position my top left...
         at: 'top left', // at the bottom right of...
         target: $('.ratio') // my target
     },
@@ -63,7 +63,8 @@ $(document).ready(function(){
 })
         
   jQuery('.headline').fitText(0.9);
-  jQuery('#subtitle').fitText(0.9);
+  jQuery('#subtitle').fitText(1.1);
+  jQuery('#slickQuiz h1').fitText(1.2);
 
 });
 
