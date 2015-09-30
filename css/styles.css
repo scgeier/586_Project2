@@ -6,6 +6,7 @@ body {
     margin-top:1%;
 }
 
+/*the slide*/
 .single-item {
     width:90%;
     height:auto;
@@ -20,7 +21,7 @@ body {
   border:none;
 }
 
-
+/*the finger image areas*/
 .graphic {
   margin-left:15%;
   max-width:100%;
@@ -37,14 +38,14 @@ body {
   margin-left:0;
 }
 
-
+/*the art deco font for the titles*/
 @font-face {
   font-family: Shadeco;
   src: url('../LetteringDecoShadow.otf');
   src: url('../LetteringDecoShadow.ttf');
   }
 
-
+/*the text areas to the right of the graphics*/
 .headline, .subhead, .textbox {
   margin-right:20%;
 }
@@ -77,10 +78,36 @@ body {
 }
 
 
+@media only screen and (max-width: 414px) {
+  
+.headline h1 {
+  zoom:150%;
+}
+}
+
 .subhead {
   border-bottom:2px dotted black;
   margin-top:7%;
   font-family:Garamond, serif;
+  position:relative;
+}
+
+
+.subhead:after {
+    border-bottom:2px dotted black;
+    content:'';
+    left:0;
+    position:absolute;
+    bottom:-5px;
+    width:100%;
+}
+
+@media only screen and (max-width: 668px) {
+  
+.subhead h2 {
+  font-size:0.9em;
+  line-height:90%;
+}
 }
 
 #title {
@@ -107,12 +134,12 @@ h1 {
   line-height:150%;
 }
 
-#quote {
+.quote {
   font-family: Museo Slab, serif;
 }
 
-@media only screen and (max-width: 668px) {
-  #quote{
+@media only screen and (max-width: 414px) {
+  .quote{
     display:none;
   }
 }
@@ -123,6 +150,7 @@ h1 {
   }
 }
 
+/*the QTip plugin*/
 .qtip {
   max-width:55%;
   height:auto;
@@ -142,12 +170,14 @@ ul {
   margin:0;
 }
 
+/*the divs for each of the finger slide citations (e.g. pointer, midddle, thumb)*/
 .sources {
   height:auto;
   width:100%;
   display:block;
   float:left;
   margin-bottom:2%;
+  margin-left:2%;
 }
 
 

@@ -63,8 +63,8 @@ $(document).ready(function(){
 })
         
   jQuery('.headline').fitText(0.9);
-  jQuery('#subtitle').fitText(1.1);
-  jQuery('#slickQuiz h1').fitText(1.2);
+  jQuery('#subtitle').fitText(0.8);
+  jQuery('#slickQuiz h1').fitText(1.1);
 
 });
 

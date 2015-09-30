@@ -86,7 +86,7 @@
 }
 .slick-prev:before
 {
-    content: url('../images/arrow-left.png');
+    content: url('../images/small-arrow-left.png');
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -104,11 +104,25 @@
 }
 .slick-next:before
 {
-    content: url('../images/arrow-right.png');
+    content: url('../images/small-arrow-right.png');
 }
 [dir='rtl'] .slick-next:before
 {
     content: url('../images/arrow-left.png');
+}
+
+@media only screen and (max-width: 668px) {
+    
+.slick-next:before {
+    content: url('../images/small-arrow-right.png');
+}
+}
+
+@media only screen and (max-width: 668px) {
+    
+.slick-prev:before {
+    content: url('../images/small-arrow-left.png');
+}
 }
 
 /* Dots */
